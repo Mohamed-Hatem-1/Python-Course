@@ -35,3 +35,9 @@ plt.ylabel('Total Sales')
 plt.title('Total Sales per Product')
 plt.xticks(rotation=45)
 plt.show()
+
+plt.figure(figsize=(8, 8))
+plt.pie(product_sales['Sales'], labels=product_sales['Product'], autopct='%1.1f%%', startangle=140)
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.title('Distribution of Sales Across Products')
+plt.show()
